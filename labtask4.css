@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 20px auto;
+  width: 800px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+p {
+  margin: 4px 0;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  background: #e1e0e0;
+}
+
+h2 {
+  color: #cc0000;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  margin-top: 6px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.req {
+  color: red;
+  margin-left: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 250px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-top: 8px;
+}
+
+textarea {
+  width: 350px;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.small-note {
+  font-size: 15px;
+  color: #333;
+  margin-top: 4px;
+}
+
+.small-note a {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 15px;
+  
+}
+
+
+input[type="reset"],
+input[type="submit"] {
+  background-color: #eee;
+  border: 1px solid #999;
+  padding: 4px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.secure-note {
+  font-size: 12px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+}
