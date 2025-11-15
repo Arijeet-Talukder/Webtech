@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+
+<body>
+
+    <h1>Online University Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstname" required maxlength="30"><br><br>
+
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" name="lastname" required maxlength="30"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" required maxlength="15"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Academic Information</strong></legend>
+
+            <label for="hsc">HSC/Equivalent Results:</label><br>
+            <input type="text" id="hsc" name="hsc" placeholder="e.g., GPA 5.00" required maxlength="10"><br><br>
+
+            <label for="ssc">SSC/Equivalent Results:</label><br>
+            <input type="text" id="ssc" name="ssc" placeholder="e.g., GPA 5.00" required maxlength="10"><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="ENG">English</option>
+                <option value="BAN">Bangla</option>
+            </select><br><br>
+
+            <label>Interests (Select all that apply):</label><br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="tech" name="interests" value="Technology">
+            <label for="tech">Technology</label>
+
+            <input type="checkbox" id="reading" name="interests" value="Reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Upload Documents</strong></legend>
+
+            <label for="photo">Upload Passport-size Photo:</label><br>
+            <input type="file" id="photo" name="photo" required><br><br>
+
+            <label for="transcript">Upload Academic Transcript:</label><br>
+            <input type="file" id="transcript" name="transcript" required><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
