@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        input[type="text"] {
+            font-size: 18px;
+            padding: 4px 6px;
+            width: 320px;
+            margin-right: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 4px 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Library Management System</h1>
+
+    <label for="titleInput">Book Title:</label>
+    <input type="text" id="titleInput" placeholder="Enter book title">
+
+    <label for="yearInput">Publication Year:</label>
+    <input type="text" id="yearInput" placeholder="Enter publication year">
+
+    <button onclick="addBook()">Add Book</button>
+
+    <h2>Book List</h2>
+
+    <table id="bookTable">
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+    </table>
+
+    <script>
+        function addBook() {
+            const titleInput = document.getElementById("titleInput");
+            const yearInput = document.getElementById("yearInput");
+
+            const title = titleInput.value.trim();
+            const year = yearInput.value.trim();
+            const currentYear = new Date().getFullYear();
+
+            if (!/^[A-Za-z ]+$/.test(title)) {
+                alert("Title must contain only alphabetic characters (no numbers or symbols).");
+                return;
+            }
+
+            if (!/^\d{4}$/.test(year) || year < 1900 || year > currentYear) {
+                alert("Year must be a 4-digit number between 1900 and " + currentYear + ".");
+                return;
+            }
+
+            const table = document.getElementById("bookTable");
+            const row = table.insertRow(-1);
+
+            if (parseInt(year, 10) < 2000) {
+                row.style.backgroundColor = "lightgray";
+            } else {
+                row.style.backgroundColor = "lightgreen";
+            }
+
+            const cellTitle = row.insertCell(0);
+            const cellYear = row.insertCell(1);
+
+            cellTitle.textContent = title;
+            cellYear.textContent = year;
+
+            titleInput.value = "";
+            yearInput.value = "";
+        }
+    </script>
+
+</body>
+</html>
