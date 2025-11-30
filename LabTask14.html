@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <style>
+ 
+        .contact-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border: 2px solid #0056b3;
+            border-radius: 8px;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-widget:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-widget a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to Our Company</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna vel tincidunt cursus, arcu mi pharetra lorem, at blandit magna justo non sapien.</p>
+        <p>Scroll down to see that the contact widget stays visible at all times.</p>
+        <p style="margin-bottom: 1000px;">More content...</p>
+    </main>
+
+    <div class="contact-widget">
+        <h4>Contact Us</h4>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+    </div>
+</body>
+</html>
