@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookHub-User Registration</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="Registration.php" method="POST">
+
+        <label for="username">Username :</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email *:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password *:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password *:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <label for="fullName">Full Name *:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="contact">Contact Number *:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="address">Address *:</label><br>
+        <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the Terms & Conditions
+        </label><br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
